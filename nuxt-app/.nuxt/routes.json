@@ -1,0 +1,59 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_0ddce879"
+  },
+  {
+    "name": "lend",
+    "path": "/lend",
+    "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\lend\\\\index.vue",
+    "chunkName": "pages/lend/index",
+    "_name": "_01450722"
+  },
+  {
+    "path": "/user",
+    "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\user.vue",
+    "chunkName": "pages/user",
+    "children": [
+      {
+        "name": "user",
+        "path": "",
+        "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\user\\\\index.vue",
+        "chunkName": "pages/user/index",
+        "_name": "_e95ddfda"
+      },
+      {
+        "name": "user-user1",
+        "path": "user1",
+        "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\user\\\\user1.vue",
+        "chunkName": "pages/user/user1",
+        "_name": "_65ce49f2"
+      },
+      {
+        "name": "user-user2",
+        "path": "user2",
+        "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\user\\\\user2.vue",
+        "chunkName": "pages/user/user2",
+        "_name": "_65b21af0"
+      }
+    ],
+    "_name": "_3523b58f"
+  },
+  {
+    "name": "lend-id",
+    "path": "/lend/:id",
+    "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\lend\\\\_id.vue",
+    "chunkName": "pages/lend/_id",
+    "_name": "_03adce97"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "F:\\\\JAVAEE\\\\ssm-srb-html\\\\nuxt-app\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2d94c33e"
+  }
+]

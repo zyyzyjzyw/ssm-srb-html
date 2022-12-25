@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="axios.js"></script>
+    <script>
+      const request = axios.create({
+        baseURL: 'http://localhost:8888', //主机地址
+        timeout: 1000, //超时时间  毫秒
+        headers: {
+          token: '1234546',
+        },
+      })
+      //基于promise
+      request({
+        method: 'get',
+        url: '/user/list',
+      })
+        .then((response) => {
+          console.log('数据获取成功', response.data)
+        })
+        .catch((error) => {
+          console.log('数据获取失败', error)
+        })
+      //请求拦截
+      request.interceptors.request.use(
+        function (config) {
+          console.log('请求拦截')
+          console.log('config', config)
+          config.headers.myToken = 'helen123'
+        },
+        function (error) {
+          return Promise.reject(error)
+        }
+      )
+      //响应拦截
+      request.interceptors.response.use(
+        function (response) {
+          console.log('response', response)
+          return response.data
+        },
+        function (error) {
+          return Promise.reject(error)
+        }
+      )
+      //另一种写法
+      request
+        .get('/user/list')
+        .then((response) => {
+          console.log('数据获取成功', response.data)
+        })
+        .catch((error) => {
+          console.log('数据获取失败', error)
+        })
+    </script>
+  </body>
+</html>
